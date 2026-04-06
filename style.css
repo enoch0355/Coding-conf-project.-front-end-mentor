@@ -8,17 +8,19 @@ body{
   padding: 30px;
   background-image: url('background-tablet.png');
 }
-
 input, button{
   padding: 10px;
-  border: 0.002rem solid white;
   border-radius: 7px;
   margin: 10px;
   width: 270px;
   background-color: transparent;
 }
 
-input{color: white;}
+input{
+  color: white;
+  width: 300px;
+  border: 0.002rem solid white;
+}
 
 label, p, h1, h5, span{
   color: white;
@@ -34,19 +36,49 @@ input:focus{
 }
 
 button{
-  width: 320px;
-  box-shadow: 0px 3px 1px 0px green;
-}
-
-#file-u{
-  padding: 30px;
-  border: 2.2px dashed white;
-}
-
-.info p{
-  text-align: center;
+  width: 323px;
+  box-shadow: 0px 3px 1px 0px hsla(7, 71%, 60%, 0.5);
+  background-color: hsl(7, 71%, 60%);
+  border: none;
 }
 
 input, button:hover{
   cursor: pointer;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+}
+.logo img{
+  margin: 10px;
+}
+
+.imfo span{
+  font-size: 10px;
+}
+
+input[type='file']{
+  display: none;
+}
+
+
+.file-field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05); 
+}
+
+.file-field p{
+  font-size: 13px;
+  margin-top: 0px;
+}
+
+label{
+  font-size: 20px;
 }
