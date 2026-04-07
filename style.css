@@ -82,3 +82,5 @@ input[type='file']{
 label{
   font-size: 20px;
 }
+.info p{
+  text-align: center;
